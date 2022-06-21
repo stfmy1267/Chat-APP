@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>チャットサンプル</title>
+    <link rel="stylesheet" href="dist.css">
+    <script type="text/javascript" src="index.js" defer></script>
+</head>
+
+<body class="m-0 flex flex-col w-screen h-screen">
+    <!-- 自分やユーザーの情報 -->
+    <header class="w-full flex h-max-13 border-b-2 drop-shadow-lg">
+        <h1 class="text-3xl p-5"><a href="#">Chat App</a></h1>
+        <div>
+            <span></span>
+        </div>
+    </header>
+    <div class="flex-1 p-5 overflow-y-scroll ">
+        <p id="info" class="float-right border-2 p-4 border-black rounded-lg">0人</p>
+        <h2 id="user" class="text-xl overflow mb-3 overflow-x-hidden"></h2>
+        <ul id="msg-area">
+            <!-- メッセージエリア -->
+        </ul>
+        <!-- テキストボックス、送信ボタン -->
+    </div>
+    <div id="bms_send" class="w-90 flex items-center h-20 pl-3 pr-3 m-3 border-1 rounded-lg bg-gray-300">
+        <textarea  placeholder="here message" id="bms_send_message" class="box-boreder  leading-4 p-3 mr-4 boredr-1 drop-shadow-xl w-full h-10"></textarea>
+        <div id="bms_send_btn" class="w-24 p-3.5 text-center bg-white rounded-lg text-lg font-extrabold hover:bg-blue-600 hover:text-white hover:cursor-pointer">send</div>
+    </div>
+
+</body>
+
+</html>
